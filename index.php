@@ -42,7 +42,7 @@
         FOREIGN KEY(id_u) REFERENCES users(ID)
       ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;"); 
       if(isset($_POST['reg'])){
-        echo"<script> location.href = 'http://localhost/TO_DO/TO_DO_APP_SIMPLE-master/Register.php' </script>";
+        echo"<script> location.href = 'Register.php' </script>";
             exit();
 
       }
@@ -63,7 +63,7 @@ if(isset($_POST["sub"])){
             session_start();
             // saving ID to use in homepage
             $_SESSION['id'] = $id;
-            echo"<script> location.href = 'http://localhost/TO_DO/TO_DO_APP_SIMPLE-master/h.php' </script>";
+            echo"<script> location.href = 'h.php' </script>";
             exit();
         }else{
             echo "This email and password are not valid";
