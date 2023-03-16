@@ -50,7 +50,7 @@
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;"); 
     session_start();
     if(isset($_POST['log'])){
-        echo"<script> location.href = 'http://localhost/TO_DO/TO_DO_APP_SIMPLE-master/index.php' </script>";
+        echo"<script> location.href = 'index.php' </script>";
                 exit();
     }
     if(isset($_POST["sub"])){
@@ -74,7 +74,7 @@
             }
             $_SESSION['usr'] = $usr;
                 $_SESSION['id'] = $id;
-                echo"<script> location.href = 'http://localhost/TO_DO/TO_DO_APP_SIMPLE-master/index.php' </script>";
+                echo"<script> location.href = 'index.php' </script>";
                 exit();
             }
         }
